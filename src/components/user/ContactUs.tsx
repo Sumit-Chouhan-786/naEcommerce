@@ -1,22 +1,28 @@
-import React from "react";
+"use client";
 import { FiMapPin, FiPhone, FiClock } from "react-icons/fi";
 import SubHeading from "../common/SubHeading";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const ContactUs = () => {
+  const pathname = usePathname();
+
   return (
     <section className="lg:pt-12 pt-10 relative">
-      
-    <div className="container relative z-10">
+      <div className="container relative z-10">
+        
         {/* Heading */}
-        <SubHeading className="mb-7" children="Contact Us"/>
+        {pathname === "/" && (
+          <SubHeading className="mb-7">Contact Us</SubHeading>
+        )}
+
         {/* Glass Background Wrap */}
         <div className="backdrop-blur-xl bg-white/40 shadow-[0_0px_5px_rgba(0,0,0,0.2)]
- border border-white/20 rounded-2xl sm:p-10 p-5">
-
+          border border-white/20 rounded-2xl sm:p-10 p-5"
+        >
           <div className="grid md:grid-cols-2 gap-10">
 
-            {/* LEFT SIDE ------------------------------------- */}
+            {/* LEFT SIDE */}
             <div>
               <p className="mt-2 mb-10 text-lg text-gray-700">
                 We'd love to hear from you! Reach out anytime and our team will respond as soon as possible.
@@ -33,7 +39,6 @@ const ContactUs = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold">Our Address</h3>
                     <p className="text-gray-700">demo</p>
-                   
                   </div>
                 </li>
 
@@ -45,7 +50,7 @@ const ContactUs = () => {
 
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold">Contact</h3>
-                    <Link href="tel:+91 123456" className="text-gray-700">+91 1234589</Link><br/>
+                    <Link href="tel:+91123456" className="text-gray-700">+91 1234589</Link><br/>
                     <Link href="mailto:demo@gmail.com" className="text-gray-700">demo@gmail.com</Link>
                   </div>
                 </li>
@@ -66,7 +71,7 @@ const ContactUs = () => {
               </ul>
             </div>
 
-            {/* RIGHT SIDE FORM -------------------------------- */}
+            {/* RIGHT SIDE FORM */}
             <div className="sm:backdrop-blur-xl sm:bg-white/60 sm:border border-white/30 sm:p-8 rounded-xl sm:shadow-lg">
               <h2 className="mb-6 text-2xl font-bold">Send a Message</h2>
 

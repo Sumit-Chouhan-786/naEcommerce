@@ -1,11 +1,11 @@
 import CommonHero from '@/components/common/CommonHero'
-import Cart from '@/components/user/Cart'
+import ContactUs from '@/components/user/ContactUs'
 
 const page = () => {
   return (
     <>
-    <CommonHero pageName='Cart'/>
-    <Cart/>
+    <CommonHero pageName='Contact'/>
+    <ContactUs/>
     </>
   )
 }
