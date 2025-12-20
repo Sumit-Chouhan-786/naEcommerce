@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 import { AiOutlineMail, AiOutlineLock } from "react-icons/ai";
 
@@ -54,9 +55,9 @@ const Login = () => {
               {/* FORGOT PASSWORD */}
               <p className="text-center text-sm text-gray-500 mt-4">
                 Forgot Password?{" "}
-                <a href="#" className="text-red-600 font-medium hover:underline">
+                <Link href="#" className="text-red-600 font-medium hover:underline">
                   Reset Here
-                </a>
+                </Link>
               </p>
 
             </div>

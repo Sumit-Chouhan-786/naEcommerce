@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FiGrid } from "react-icons/fi";
 
@@ -10,12 +11,12 @@ export const Footer = () => {
           
           {/* LEFT BLOCK */}
           <div className="md:max-w-md lg:col-span-2">
-            <a href="/" className="inline-flex items-center">
+            <Link href="/" className="inline-flex items-center">
               <FiGrid className="w-8 h-8 text-white hover:text-white transition duration-300" />
               <span className="ml-2 text-xl font-bold tracking-wide uppercase">
                 TechStore
               </span>
-            </a>
+            </Link>
 
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-gray-300">
@@ -33,11 +34,11 @@ Your trusted online destination for premium gadgets, smart devices, and accessor
             <div>
               <p className="font-semibold tracking-wide">Pages</p>
               <ul className="mt-2 space-y-2">
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Home</a></li>
-                <li><a href="/about" className="text-gray-400 hover:text-white transition">About Us</a></li>
-                <li><a href="/shop" className="text-gray-400 hover:text-white transition">Shop</a></li>
-                <li><a href="/blogs" className="text-gray-400 hover:text-white transition">Blogs</a></li>
-                <li><a href="/faq" className="text-gray-400 hover:text-white transition">FAQ</a></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Home</Link></li>
+                <li><Link href="/about" className="text-gray-400 hover:text-white transition">About Us</Link></li>
+                <li><Link href="/shop" className="text-gray-400 hover:text-white transition">Shop</Link></li>
+                <li><Link href="/blogs" className="text-gray-400 hover:text-white transition">Blogs</Link></li>
+                <li><Link href="/faq" className="text-gray-400 hover:text-white transition">FAQ</Link></li>
               </ul>
             </div>
 
@@ -45,11 +46,11 @@ Your trusted online destination for premium gadgets, smart devices, and accessor
             <div>
               <p className="font-semibold tracking-wide">Categories</p>
               <ul className="mt-2 space-y-2">
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Headphones</a></li>
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Smart Watches</a></li>
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Bluetooth Speakers</a></li>
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Chargers</a></li>
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Accessories</a></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Headphones</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Smart Watches</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Bluetooth Speakers</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Chargers</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Accessories</Link></li>
               </ul>
             </div>
 
@@ -57,11 +58,11 @@ Your trusted online destination for premium gadgets, smart devices, and accessor
             <div>
               <p className="font-semibold tracking-wide">Featured Products</p>
               <ul className="mt-2 space-y-2">
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Wireless Earbuds</a></li>
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Gaming Headset</a></li>
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Fast Charging Powerbank</a></li>
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Smart Fitness Band</a></li>
-                <li><a href="/" className="text-gray-400 hover:text-white transition">Portable Speaker</a></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Wireless Earbuds</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Gaming Headset</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Fast Charging Powerbank</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Smart Fitness Band</Link></li>
+                <li><Link href="/" className="text-gray-400 hover:text-white transition">Portable Speaker</Link></li>
               </ul>
             </div>
 
@@ -70,17 +71,17 @@ Your trusted online destination for premium gadgets, smart devices, and accessor
               <p className="font-semibold tracking-wide">Contact Us</p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a href="tel:+91123456" className="text-gray-400 hover:text-white transition">
+                  <Link href="tel:+91123456" className="text-gray-400 hover:text-white transition">
                     +91 123456
-                  </a>
+                  </Link>
                 </li>
                <li>
-  <a
+  <Link
     href="mailto:demo@gmail.com"
     className="text-gray-400 wrap-break-word hover:text-white transition"
   >
     demo@gmail.com
-  </a>
+  </Link>
 </li>
 
                 <p className="text-sm text-gray-400">
@@ -99,15 +100,15 @@ Your trusted online destination for premium gadgets, smart devices, and accessor
           </p>
 
           <div className="flex items-center mb-3 space-x-4 sm:mt-0">
-            <a href="/" className="text-gray-400 hover:text-white transition">
+            <Link href="/" className="text-gray-400 hover:text-white transition">
               <FaTwitter className="h-5 w-5" />
-            </a>
-            <a href="/" className="text-gray-400 hover:text-white transition">
+            </Link>
+            <Link href="/" className="text-gray-400 hover:text-white transition">
               <FaInstagram className="h-6 w-6" />
-            </a>
-            <a href="/" className="text-gray-400 hover:text-white transition">
+            </Link>
+            <Link href="/" className="text-gray-400 hover:text-white transition">
               <FaFacebookF className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
 

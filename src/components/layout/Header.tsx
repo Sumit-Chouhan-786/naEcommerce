@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FiSearch, FiHeart, FiShoppingCart, FiMenu, FiX } from "react-icons/fi";
 
@@ -16,11 +17,11 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-8 font-medium">
-            <a href="/" className="hover:text-black text-gray-600">Home</a>
-            <a href="/contact" className="hover:text-black text-gray-600">Contact</a>
-            <a href="/about" className="hover:text-black text-gray-600">About</a>
-            <a href="/Products" className="hover:text-black text-gray-600">Shop Now</a>
-            <a href="/signup" className="hover:text-black text-gray-600">Sign-Up</a>
+            <Link href="/" className="hover:text-black text-gray-600">Home</Link>
+            <Link href="/contact" className="hover:text-black text-gray-600">Contact</Link>
+            <Link href="/about" className="hover:text-black text-gray-600">About</Link>
+            <Link href="/all-products" className="hover:text-black text-gray-600">Shop Now</Link>
+            <Link href="/signup" className="hover:text-black text-gray-600">Sign-Up</Link>
           </nav>
 
           {/* Right side icons */}
@@ -66,11 +67,11 @@ const Header = () => {
 
         {/* Mobile menu items */}
         <nav className="flex flex-col space-y-6 text-lg font-medium px-6">
-          <a href="/" className="hover:text-black text-gray-600">Home</a>
-          <a href="/contact" className="hover:text-black text-gray-600">Contact</a>
-          <a href="/about" className="hover:text-black text-gray-600">About</a>
-          <a href="/Products" className="hover:text-black text-gray-600">Shop Now</a>
-          <a href="/signup" className="hover:text-black text-gray-600">Sign-Up</a>
+          <Link href="/" className="hover:text-black text-gray-600">Home</Link>
+          <Link href="/contact" className="hover:text-black text-gray-600">Contact</Link>
+          <Link href="/about" className="hover:text-black text-gray-600">About</Link>
+          <Link href="/Products" className="hover:text-black text-gray-600">Shop Now</Link>
+          <Link href="/signup" className="hover:text-black text-gray-600">Sign-Up</Link>
         </nav>
       </div>
     </>

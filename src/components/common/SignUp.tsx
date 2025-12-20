@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 import { AiOutlineUser, AiOutlineMail, AiOutlineLock } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
@@ -77,7 +78,7 @@ const Login = () => {
               {/* LOGIN LINK */}
               <p className="text-center text-sm text-gray-500 mt-4">
                 Already have account?{" "}
-                <a href="/login" className="text-blue-600 font-medium hover:underline">Log in</a>
+                <Link href="/login" className="text-blue-600 font-medium hover:underline">Log in</Link>
               </p>
 
             </div>
