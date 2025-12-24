@@ -11,7 +11,6 @@ const Header = () => {
       {/* Top Navbar */}
       <header className="w-full py-3 bg-white border-b">
         <div className="container flex items-center justify-between">
-
           {/* Logo */}
           <h1 className="text-2xl font-bold">Exclusive</h1>
 
